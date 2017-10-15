@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.management.login.dao.LoginMapper" >
+  <resultMap id="BaseResultMap" type="com.management.login.pojo.Login" >
+    <constructor >
+      <idArg column="id" jdbcType="NVARCHAR" javaType="java.lang.String" />
+      <arg column="name" jdbcType="NVARCHAR" javaType="java.lang.String" />
+      <arg column="post" jdbcType="NVARCHAR" javaType="java.lang.String" />
+      <arg column="pwd" jdbcType="NVARCHAR" javaType="java.lang.String" />
+      <arg column="postid" jdbcType="NVARCHAR" javaType="java.lang.String" />
+      <arg column="py" jdbcType="NVARCHAR" javaType="java.lang.String" />
+      <arg column="pyname" jdbcType="NVARCHAR" javaType="java.lang.String" />
+      <arg column="id_old" jdbcType="NVARCHAR" javaType="java.lang.String" />
+      <arg column="status" jdbcType="NVARCHAR" javaType="java.lang.String" />
+    </constructor>
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, name, post, pwd, postid, py, pyname, id_old, status
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from Login
+    where id = #{id,jdbcType=NVARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from Login
+    where id = #{id,jdbcType=NVARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.management.login.pojo.Login" >
+    insert into Login (id, name, post, 
+      pwd, postid, py, 
+      pyname, id_old, status
+      )
+    values (#{id,jdbcType=NVARCHAR}, #{name,jdbcType=NVARCHAR}, #{post,jdbcType=NVARCHAR}, 
+      #{pwd,jdbcType=NVARCHAR}, #{postid,jdbcType=NVARCHAR}, #{py,jdbcType=NVARCHAR}, 
+      #{pyname,jdbcType=NVARCHAR}, #{idOld,jdbcType=NVARCHAR}, #{status,jdbcType=NVARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.management.login.pojo.Login" >
+    insert into Login
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="name != null" >
+        name,
+      </if>
+      <if test="post != null" >
+        post,
+      </if>
+      <if test="pwd != null" >
+        pwd,
+      </if>
+      <if test="postid != null" >
+        postid,
+      </if>
+      <if test="py != null" >
+        py,
+      </if>
+      <if test="pyname != null" >
+        pyname,
+      </if>
+      <if test="idOld != null" >
+        id_old,
+      </if>
+      <if test="status != null" >
+        status,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=NVARCHAR},
+      </if>
+      <if test="name != null" >
+        #{name,jdbcType=NVARCHAR},
+      </if>
+      <if test="post != null" >
+        #{post,jdbcType=NVARCHAR},
+      </if>
+      <if test="pwd != null" >
+        #{pwd,jdbcType=NVARCHAR},
+      </if>
+      <if test="postid != null" >
+        #{postid,jdbcType=NVARCHAR},
+      </if>
+      <if test="py != null" >
+        #{py,jdbcType=NVARCHAR},
+      </if>
+      <if test="pyname != null" >
+        #{pyname,jdbcType=NVARCHAR},
+      </if>
+      <if test="idOld != null" >
+        #{idOld,jdbcType=NVARCHAR},
+      </if>
+      <if test="status != null" >
+        #{status,jdbcType=NVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.management.login.pojo.Login" >
+    update Login
+    <set >
+      <if test="name != null" >
+        name = #{name,jdbcType=NVARCHAR},
+      </if>
+      <if test="post != null" >
+        post = #{post,jdbcType=NVARCHAR},
+      </if>
+      <if test="pwd != null" >
+        pwd = #{pwd,jdbcType=NVARCHAR},
+      </if>
+      <if test="postid != null" >
+        postid = #{postid,jdbcType=NVARCHAR},
+      </if>
+      <if test="py != null" >
+        py = #{py,jdbcType=NVARCHAR},
+      </if>
+      <if test="pyname != null" >
+        pyname = #{pyname,jdbcType=NVARCHAR},
+      </if>
+      <if test="idOld != null" >
+        id_old = #{idOld,jdbcType=NVARCHAR},
+      </if>
+      <if test="status != null" >
+        status = #{status,jdbcType=NVARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=NVARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.management.login.pojo.Login" >
+    update Login
+    set name = #{name,jdbcType=NVARCHAR},
+      post = #{post,jdbcType=NVARCHAR},
+      pwd = #{pwd,jdbcType=NVARCHAR},
+      postid = #{postid,jdbcType=NVARCHAR},
+      py = #{py,jdbcType=NVARCHAR},
+      pyname = #{pyname,jdbcType=NVARCHAR},
+      id_old = #{idOld,jdbcType=NVARCHAR},
+      status = #{status,jdbcType=NVARCHAR}
+    where id = #{id,jdbcType=NVARCHAR}
+  </update>
+
+  <select id="selectByIdAndPassword" parameterType="string" resultMap="BaseResultMap">
+    select <include refid="Base_Column_List" />
+    from login where id = #{id} and pwd = #{pwd}
+  </select>
+</mapper>
