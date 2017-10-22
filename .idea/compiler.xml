@@ -9,15 +9,19 @@
         <module name="common" />
         <module name="device" />
         <module name="oa" />
-        <module name="wechat" />
+        <module name="web" />
+        <module name="weixin-java-mp-demo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="common" target="1.5" />
-      <module name="device" target="1.5" />
-      <module name="manage" target="1.5" />
-      <module name="oa" target="1.5" />
+      <module name="common" target="8" />
+      <module name="device" target="8" />
+      <module name="manage" target="8" />
+      <module name="oa" target="8" />
+      <module name="web" target="8" />
+      <module name="webapp" target="1.5" />
       <module name="wechat" target="1.8" />
+      <module name="weixin-java-mp-demo" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

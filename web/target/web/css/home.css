@@ -1,0 +1,97 @@
+/**
+ * Description: 
+ * User: wen-sr
+ * Date: 2017-09-01  17:38
+ */
+#top{
+    background: #1a6aab;
+}
+#nav-west{
+    background: #428fb9;
+}
+* {
+    font-size: 12px;
+    font-family: "Microsoft YaHei UI Light",Tahoma, Verdana, 微软雅黑, 新宋体
+}
+
+body {
+    background: #D2E0F2;
+}
+
+a {
+    color: Black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: Red;
+    cursor: pointer;
+    /*text-decoration: underline;*/
+}
+
+
+.txt01 {
+    padding: 3px 2px 2px 2px;
+    border-width: 1px;
+    border-color: #ddd;
+    color: #000;
+}
+
+.txt {
+    border: #878787 1px solid;
+    padding: 4px 3px;
+    line-height: 14px;
+    background-color: #fff;
+    height: auto;
+    font-size: 14px;
+}
+
+.footer {
+    text-align: center;
+    color: #15428B;
+    margin: 0px;
+    padding: 0px;
+    line-height: 23px;
+    font-weight: bold;
+}
+
+.head a {
+    color: White;
+    text-decoration: underline;
+}
+
+.easyui-accordion ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 10px;
+}
+
+.easyui-accordion ul li {
+    border: 1px dashed #99BBE8;
+    margin: 2px 2px;
+    padding-left: 10px;
+    padding-top: 2px;
+}
+
+.easyui-accordion ul li a {
+    display: inline-block;
+    height:95%;
+    width: 95%;
+    font-family: "Microsoft YaHei UI Light",Tahoma, Verdana, 微软雅黑, 新宋体;
+    line-height: 24px;
+}
+
+.easyui-accordion ul li:hover {
+    border: 1px dashed #99BBE8;
+    background: #E0ECFF;
+    cursor: pointer;
+}
+
+.easyui-accordion ul li.hover a {
+    color: #416AA3;
+    font-weight: bold;
+}
+
+.fa {
+    color: #1a6aab;
+}

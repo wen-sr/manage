@@ -6,7 +6,8 @@
       <module fileurl="file://$PROJECT_DIR$/device/device.iml" filepath="$PROJECT_DIR$/device/device.iml" />
       <module fileurl="file://$PROJECT_DIR$/manage.iml" filepath="$PROJECT_DIR$/manage.iml" />
       <module fileurl="file://$PROJECT_DIR$/oa/oa.iml" filepath="$PROJECT_DIR$/oa/oa.iml" />
-      <module fileurl="file://$PROJECT_DIR$/wechat/wechat.iml" filepath="$PROJECT_DIR$/wechat/wechat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web/web.iml" filepath="$PROJECT_DIR$/web/web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wechat/weixin-java-mp-demo.iml" filepath="$PROJECT_DIR$/wechat/weixin-java-mp-demo.iml" />
     </modules>
   </component>
 </project>

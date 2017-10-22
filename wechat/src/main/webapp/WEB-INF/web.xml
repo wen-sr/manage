@@ -25,7 +25,7 @@
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
 	<listener>
-		<listener-class>org.springframework.web.util.IntrospectorCleanupListener</listener-class>
+		<listener-class>org.springframework.web.com.jxlhwl.com.jxlhwl.common.com.jxlhwl.util.IntrospectorCleanupListener</listener-class>
 	</listener>
 	<servlet>
 		<description>spring mvc servlet</description>
@@ -33,7 +33,7 @@
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
 		<init-param>
 			<param-name>contextConfigLocation</param-name>
-			<param-value>classpath:spring-servlet-common.xml</param-value>
+			<param-value>classpath:spring-servlet-com.jxlhwl.com.jxlhwl.common.com.jxlhwl.common.xml</param-value>
 		</init-param>
 		<load-on-startup>1</load-on-startup>
 	</servlet>

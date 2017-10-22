@@ -1,0 +1,16 @@
+com\jxlhwl\device\service\DeviceStatusService.class
+com\jxlhwl\device\dao\DeviceTypeMapper.class
+com\jxlhwl\device\service\impl\DeviceStatusServiceImpl.class
+com\jxlhwl\device\service\IDeviceUserService.class
+com\jxlhwl\device\service\impl\DeviceuserServiceImpl.class
+com\jxlhwl\device\dao\DeviceUsersMapper.class
+com\jxlhwl\device\dao\DeviceStatusMapper.class
+com\jxlhwl\device\vo\DeviceVo.class
+com\jxlhwl\device\pojo\DeviceList.class
+com\jxlhwl\device\pojo\DeviceUsers.class
+com\jxlhwl\device\pojo\DeviceStatus.class
+com\jxlhwl\device\vo\RepairVo.class
+com\jxlhwl\device\dao\DeviceListMapper.class
+com\jxlhwl\device\pojo\DeviceRepair.class
+com\jxlhwl\device\dao\DeviceRepairMapper.class
+com\jxlhwl\device\pojo\DeviceType.class
